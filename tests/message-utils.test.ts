@@ -13,6 +13,11 @@ describe("SignBridge message helpers", () => {
 
   it("deletes the last character", () => {
     expect(deleteLastCharacter("HELLO")).toBe("HELL");
+    expect(deleteLastCharacter("")).toBe("");
+  });
+
+  it("keeps manual composition readable when spacing is tapped repeatedly", () => {
+    expect(appendSpace(appendSpace("HELLO"))).toBe("HELLO ");
   });
 
   it("accepts confident new letters and ignores repeats or low confidence", () => {

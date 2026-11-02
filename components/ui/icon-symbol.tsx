@@ -24,6 +24,9 @@ const MAPPING = {
   "sparkles": "auto-awesome",
   "speaker.wave.2.fill": "volume-up",
   "play.fill": "play-arrow",
+  "translate": "translate",
+  "clock.fill": "history",
+  "gearshape.fill": "settings",
 } as IconMapping;
 
 /**

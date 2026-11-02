@@ -1,16 +1,20 @@
 # Project TODO
 
-- [x] Define initial ASL fingerspelling prototype scope
-- [x] Document portrait mobile interface design and user flows
-- [x] Create SignBridge app icon and apply branding configuration
-- [x] Customize theme colors for the SignBridge brand
-- [x] Build Translate camera workspace with permission and recognition states
-- [x] Add assembled message editing controls: space, delete, and clear
-- [x] Add device text-to-speech for the assembled message
-- [x] Add Practice screen with target-letter learning flow
-- [ ] Add History screen with local message history or an honest empty state
-- [ ] Add Settings screen with speech and privacy preferences
-- [x] Define a recognition adapter boundary for a real ASL handshape model
-- [x] Add deterministic unit tests for message assembly and recognition stability
-- [x] Validate TypeScript, lint, and core interaction flows
-- [ ] Document current demo limitations and production recognition next steps
+## Rebuild: reliable core experience
+
+- [x] Replace the fragile prototype screen with a single stable Translate flow
+- [x] Make message assembly work without camera access: letter input, space, delete, clear
+- [x] Keep native camera permission and preview isolated behind a safe fallback
+- [x] Add a clear recognition-mode label so demo/manual input is never mistaken for live ASL recognition
+- [x] Add local History for saved messages and replay with speech
+- [x] Add Settings for speech rate and privacy preferences
+- [x] Fix icon mappings and verify Android/web rendering paths
+- [x] Add deterministic tests for message editing and spacing behavior
+- [x] Run TypeScript, lint, tests, and preview screenshot checks
+- [ ] Save a new checkpoint after the rebuilt app passes verification
+
+## Production recognition follow-up
+
+- [ ] Integrate a real on-device ASL handshape model through the recognition adapter
+- [ ] Test hand orientation, lighting, distance, and multiple skin tones on physical devices
+- [ ] Generate and validate an Android APK from the rebuilt checkpoint
